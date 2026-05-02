@@ -1,0 +1,102 @@
+[
+  {
+    "document": "Our new packaging is 100% eco-friendly and helps save the planet for future generations.",
+    "expected_phrases": ["eco-friendly", "save the planet"],
+    "expected_actions": {"eco-friendly": "replace", "save the planet": "delete"}
+  },
+  {
+    "document": "GreenCorp is committed to becoming carbon neutral by 2050 through verified offsets and renewable energy investments.",
+    "expected_phrases": [],
+    "expected_actions": {}
+  },
+  {
+    "document": "Made with all-natural ingredients, our product is the most sustainable choice on the market.",
+    "expected_phrases": ["all-natural", "most sustainable choice"],
+    "expected_actions": {"all-natural": "replace", "most sustainable choice": "delete"}
+  },
+  {
+    "document": "We reduced our scope-1 emissions by 32% in 2024, audited by Bureau Veritas.",
+    "expected_phrases": [],
+    "expected_actions": {}
+  },
+  {
+    "document": "This bottle is green and clean — a guilt-free choice for environmentally conscious shoppers.",
+    "expected_phrases": ["green and clean", "guilt-free"],
+    "expected_actions": {"green and clean": "delete", "guilt-free": "delete"}
+  },
+  {
+    "document": "Our facility achieved ISO 14001 certification in 2023 and reports annually under the GHG Protocol.",
+    "expected_phrases": [],
+    "expected_actions": {}
+  },
+  {
+    "document": "Our planet-friendly formula is gentle on the earth and your skin.",
+    "expected_phrases": ["planet-friendly", "gentle on the earth"],
+    "expected_actions": {"planet-friendly": "replace", "gentle on the earth": "delete"}
+  },
+  {
+    "document": "We source 78% of our cotton from Better Cotton Initiative certified farms as of FY2024.",
+    "expected_phrases": [],
+    "expected_actions": {}
+  },
+  {
+    "document": "Buying our shoes helps reforest the Amazon — every pair is a step towards a greener tomorrow.",
+    "expected_phrases": ["helps reforest the Amazon", "greener tomorrow"],
+    "expected_actions": {"helps reforest the Amazon": "replace", "greener tomorrow": "delete"}
+  },
+  {
+    "document": "The container is made from 30% post-consumer recycled PET and is curbside-recyclable in 90% of US municipalities.",
+    "expected_phrases": [],
+    "expected_actions": {}
+  },
+  {
+    "document": "Our cloud infrastructure is powered by 100% renewable energy, matched annually with RECs.",
+    "expected_phrases": [],
+    "expected_actions": {}
+  },
+  {
+    "document": "An ethically-sourced, conscious choice for the modern consumer who cares about Mother Earth.",
+    "expected_phrases": ["ethically-sourced", "conscious choice", "Mother Earth"],
+    "expected_actions": {"ethically-sourced": "replace", "conscious choice": "delete", "Mother Earth": "delete"}
+  },
+  {
+    "document": "We commit to zero deforestation in our palm oil supply chain by 2025, verified by RSPO.",
+    "expected_phrases": [],
+    "expected_actions": {}
+  },
+  {
+    "document": "Our biodegradable plastic breaks down naturally and leaves no trace in the environment.",
+    "expected_phrases": ["biodegradable", "no trace in the environment"],
+    "expected_actions": {"biodegradable": "replace", "no trace in the environment": "delete"}
+  },
+  {
+    "document": "FY2024 water withdrawal in water-stressed regions decreased 14% versus our 2019 baseline.",
+    "expected_phrases": [],
+    "expected_actions": {}
+  },
+  {
+    "document": "We are dedicated to making the world a better place, one cup of coffee at a time.",
+    "expected_phrases": ["making the world a better place"],
+    "expected_actions": {"making the world a better place": "delete"}
+  },
+  {
+    "document": "Our supply chain audit covers 100% of tier-1 suppliers and 64% of tier-2 suppliers as of Q2 2024.",
+    "expected_phrases": [],
+    "expected_actions": {}
+  },
+  {
+    "document": "These trainers are crafted with sustainable materials from responsibly-managed forests.",
+    "expected_phrases": ["sustainable materials", "responsibly-managed forests"],
+    "expected_actions": {"sustainable materials": "replace", "responsibly-managed forests": "keep"}
+  },
+  {
+    "document": "Our LCA was conducted by an independent third party and the results are publicly available on our website.",
+    "expected_phrases": [],
+    "expected_actions": {}
+  },
+  {
+    "document": "Choose green. Choose sustainable. Choose us.",
+    "expected_phrases": ["green", "sustainable"],
+    "expected_actions": {"green": "delete", "sustainable": "delete"}
+  }
+]

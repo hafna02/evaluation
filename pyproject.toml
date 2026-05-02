@@ -1,0 +1,59 @@
+[project]
+name = "greenwashing-detector"
+version = "0.1.0"
+description = "Multi-agent greenwashing detection system with LangSmith tracing & evaluation."
+requires-python = ">=3.10"
+authors = [{ name = "Your Name" }]
+license = { text = "MIT" }
+readme = "README.md"
+
+dependencies = [
+    "langchain>=0.3.0",
+    "langchain-core>=0.3.0",
+    "langchain-community>=0.3.0",
+    "langchain-ollama>=0.2.0",
+    "langgraph>=0.2.0",
+    "langsmith>=0.1.140",
+    "pydantic>=2.7.0",
+    "pydantic-settings>=2.3.0",
+    "python-dotenv>=1.0.0",
+    "typer>=0.12.0",
+    "rich>=13.7.0",
+]
+
+[project.optional-dependencies]
+hf = [
+    "langchain-huggingface>=0.1.0",
+    "transformers>=4.44.0",
+    "torch>=2.2.0",
+    "accelerate>=0.33.0",
+]
+dev = [
+    "ruff>=0.6.0",
+    "mypy>=1.10.0",
+    "pytest>=8.0.0",
+    "ipykernel>=6.29.0",
+    "jupyter>=1.0.0",
+]
+
+[project.scripts]
+greenwash = "greenwashing.cli:app"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+ignore_missing_imports = true
