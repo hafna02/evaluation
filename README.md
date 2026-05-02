@@ -127,8 +127,3 @@ All settings come from `.env` via `pydantic-settings`. Highlights:
 
 LangSmith documentation tends to use OpenAI + a single chain. This repo demonstrates a more realistic setup: a **multi-agent graph**, **fully local models**, and **all three evaluator categories** working together on a use case that actually matters (regulators are increasingly enforcing against vague green claims — see the EU's Green Claims Directive).
 
----
-
-## License
-
-MIT
